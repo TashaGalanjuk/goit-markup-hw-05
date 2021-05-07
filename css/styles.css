@@ -105,7 +105,7 @@ img {
   height: 100%;
 
   background-color: #75757593;
-  transition: opacity var(--animation);
+  transition: opacity var(--animation), visability var(--animation);
 }
 
 .backdrop.is-hidden {
@@ -549,6 +549,11 @@ img {
 .social-icons-link:hover {
   background-color: var(--accent-text-color);
 }
+
+.social-icons-link:focus {
+  background-color: var(--accent-text-color);
+}
+
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
   fill: var(--white-text-color);
@@ -660,6 +665,16 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.gallery-progect__link:hover .thumb-text {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.gallery-progect__link:focus.thumb-text {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
 .thumb-product {
   position: relative;
   width: 100%;
@@ -680,7 +695,7 @@ img {
   opacity: 0;
 
   font-family: var(--title-font);
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -690,12 +705,7 @@ img {
   background: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform var(--animation);
-}
-
-.product:hover .thumb-text {
-  transform: translateY(0%);
-  opacity: 1;
+  transition: transform var(--animation), opacity var(--animation);
 }
 
 /* FOOTER */
@@ -760,6 +770,10 @@ img {
 }
 
 .footer-icons-link:hover {
+  background-color: var(--accent-text-color);
+}
+
+.footer-icons-link:focus {
   background-color: var(--accent-text-color);
 }
 
