@@ -51,6 +51,11 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .list {
   padding-left: 0;
   margin: 0;
@@ -474,6 +479,7 @@ img {
   font-family: var(--title-font);
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
 }
 
 /* CLIENTS */
@@ -541,7 +547,6 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-bg-color);
-  margin-top: 16px;
 
   transition: background-color var(--animation);
 }
@@ -725,8 +730,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--white-text-color);
-  font-style: normal;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .footer-subscription {
@@ -736,8 +741,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--white-text-color);
-  font-style: normal;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 /* Footer icon */
@@ -758,7 +763,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-top: 16px;
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color var(--animation);
